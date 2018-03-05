@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 
 import App1 from './App1.vue'
+import App2 from './App2.vue'
 
 export const eventBus = new Vue({
   methods: {
@@ -21,4 +22,9 @@ render: h => h(App)
 new Vue({
   el: '#app1',
   render: h => h(App1)
+});
+
+new Vue({
+  el: '#app2',
+  render: h => h(App2)
 });
